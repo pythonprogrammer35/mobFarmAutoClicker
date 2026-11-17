@@ -1,6 +1,4 @@
 import pyautogui 
-from pynput import keyboard
-from pynput.mouse import Button, Controller
 import time
 import pydirectinput
 import threading
@@ -34,9 +32,6 @@ def on_release(key):
 
 def testMove():
     global control
-    mouse = Controller()
-    time.sleep(1)
-    counter = 0
     
 
     pydirectinput.moveRel(75, 0, relative=True)
